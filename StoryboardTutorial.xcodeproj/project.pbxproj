@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262E99071B25E143004B3267 /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262E99061B25E143004B3267 /* PlayersViewController.m */; };
 		26BF1E181B259E770020B06E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF1E171B259E770020B06E /* main.m */; };
 		26BF1E1B1B259E770020B06E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF1E1A1B259E770020B06E /* AppDelegate.m */; };
 		26BF1E1E1B259E770020B06E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF1E1D1B259E770020B06E /* ViewController.m */; };
@@ -38,7 +39,6 @@
 		26BF1E9F1B25A6660020B06E /* Gestures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26BF1E871B25A6660020B06E /* Gestures@2x.png */; };
 		26BF1EA01B25A6660020B06E /* Players.png in Resources */ = {isa = PBXBuildFile; fileRef = 26BF1E881B25A6660020B06E /* Players.png */; };
 		26BF1EA11B25A6660020B06E /* Players@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26BF1E891B25A6660020B06E /* Players@2x.png */; };
-		26BF1EAA1B25ABE70020B06E /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF1EA91B25ABE70020B06E /* PlayersViewController.m */; };
 		26BF1EAD1B25ACC30020B06E /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF1EAC1B25ACC30020B06E /* Player.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		262E99051B25E143004B3267 /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
+		262E99061B25E143004B3267 /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
 		26BF1E121B259E770020B06E /* StoryboardTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BF1E161B259E770020B06E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26BF1E171B259E770020B06E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,8 +92,6 @@
 		26BF1E871B25A6660020B06E /* Gestures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gestures@2x.png"; sourceTree = "<group>"; };
 		26BF1E881B25A6660020B06E /* Players.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Players.png; sourceTree = "<group>"; };
 		26BF1E891B25A6660020B06E /* Players@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players@2x.png"; sourceTree = "<group>"; };
-		26BF1EA81B25ABE70020B06E /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
-		26BF1EA91B25ABE70020B06E /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
 		26BF1EAB1B25ACC30020B06E /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		26BF1EAC1B25ACC30020B06E /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,10 +144,10 @@
 				26BF1E221B259E770020B06E /* Images.xcassets */,
 				26BF1E241B259E770020B06E /* LaunchScreen.xib */,
 				26BF1E151B259E770020B06E /* Supporting Files */,
-				26BF1EA81B25ABE70020B06E /* PlayersViewController.h */,
-				26BF1EA91B25ABE70020B06E /* PlayersViewController.m */,
 				26BF1EAB1B25ACC30020B06E /* Player.h */,
 				26BF1EAC1B25ACC30020B06E /* Player.m */,
+				262E99051B25E143004B3267 /* PlayersViewController.h */,
+				262E99061B25E143004B3267 /* PlayersViewController.m */,
 			);
 			path = StoryboardTutorial;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26BF1E1E1B259E770020B06E /* ViewController.m in Sources */,
-				26BF1EAA1B25ABE70020B06E /* PlayersViewController.m in Sources */,
+				262E99071B25E143004B3267 /* PlayersViewController.m in Sources */,
 				26BF1E1B1B259E770020B06E /* AppDelegate.m in Sources */,
 				26BF1E181B259E770020B06E /* main.m in Sources */,
 				26BF1EAD1B25ACC30020B06E /* Player.m in Sources */,
@@ -528,6 +528,7 @@
 				26BF1E371B259E770020B06E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26BF1E381B259E770020B06E /* Build configuration list for PBXNativeTarget "StoryboardTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +537,7 @@
 				26BF1E3A1B259E770020B06E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  Player.h
+//  SampleData.h
 //  StoryboardTutorial
 //
 //  Created by Hannah Carney on 6/8/15.
@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Player : NSObject
-
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *game;
-@property (nonatomic, assign) int rating;
+@interface SampleData : NSObject
 
 @end
