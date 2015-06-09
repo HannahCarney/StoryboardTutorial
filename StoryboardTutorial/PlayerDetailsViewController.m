@@ -15,6 +15,10 @@
 
 @implementation PlayerDetailsViewController
 
+{
+    NSString *_game;
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if ((self = [super initWithCoder:aDecoder])) {
@@ -30,6 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.detailLabel.text = _game;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -44,6 +49,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"PickGame"]) {
+        GamePickerViewController *gamePickerViewController = segue.destinationViewController;
+        gamePickerViewController.delegate = self;
+        gamePickerViewController.game = _game;
+    }
+}
+
+- (void)gamePickerViewController:(GamePickerViewController *)controller didSelectGame:(NSString *)game
+{
+    _game = game;
+    self.detailLabel.text = _game;
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 - (IBAction)cancel:(id)sender
 {
     [self.delegate playerDetailsViewControllerDidCancel:self];
@@ -52,7 +74,7 @@
 {
     Player *player = [[Player alloc] init];
     player.name = self.nameTextField.text;
-    player.game = @"Chess";
+    player.game = _game;
     player.rating = 1;
     [self.delegate playerDetailsViewController:self didAddPlayer:player];
 }
