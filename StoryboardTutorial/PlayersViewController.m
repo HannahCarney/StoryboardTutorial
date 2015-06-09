@@ -16,6 +16,19 @@
 
 @implementation PlayersViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self = [super initWithCoder:aDecoder])) {
+        NSLog(@"init PlayerDetailsViewController");
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    NSLog(@"dealloc PlayerDetailsViewController");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
