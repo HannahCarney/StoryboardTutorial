@@ -80,12 +80,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Jfe-Wq-FKd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                                    <rect key="frame" x="10" y="7" width="300" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -135,8 +136,8 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="detailLabel" destination="ciK-pB-qTL" id="q3a-1i-ZYN"/>
-                        <outlet property="nameTextField" destination="Jfe-Wq-FKd" id="uSB-c6-buS"/>
+                        <outlet property="detailLabel" destination="ciK-pB-qTL" id="DBY-Ni-8DG"/>
+                        <outlet property="nameTextField" destination="Jfe-Wq-FKd" id="H0M-NF-WCQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nhy-wK-Et2" userLabel="First Responder" sceneMemberID="firstResponder"/>

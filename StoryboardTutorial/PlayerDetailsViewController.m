@@ -7,6 +7,7 @@
 //
 
 #import "PlayerDetailsViewController.h"
+#import "Player.h"
 
 @interface PlayerDetailsViewController ()
 
@@ -24,6 +25,13 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        [self.nameTextField becomeFirstResponder];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -36,7 +44,11 @@
 }
 - (IBAction)done:(id)sender
 {
-    [self.delegate playerDetailsViewControllerDidSave:self];
+    Player *player = [[Player alloc] init];
+    player.name = self.nameTextField.text;
+    player.game = @"Chess";
+    player.rating = 1;
+    [self.delegate playerDetailsViewController:self didAddPlayer:player];
 }
 
 @end
